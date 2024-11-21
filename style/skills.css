@@ -68,6 +68,14 @@
     align-items: center;
 }
 
+/* SKILL CHART */
+
+.skill-chart {
+    width: 264px;
+    height: 170px;
+    position: relative;
+    transition: width 0.1s;
+}
 .bar-container {
     display: flex;
     flex-direction: column;
@@ -111,10 +119,11 @@
     position: absolute;
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 46px;
     height: 100%;
     top: 0;
     border-bottom: 1px solid #284066;
+    transition: gap 0.1s;
 }
 
 .axis-col {
@@ -142,12 +151,6 @@
     height: 100%;
     width: 1px;
     background-color: #284066;
-}
-
-.skill-chart {
-    width: 200px;
-    height: 170px;
-    position: relative;
 }
 
 .axis-label {
@@ -210,4 +213,32 @@
 
 .skill-group-selected:hover {
     background-color: #141c2a;
+}
+
+/* ----- TABLET LANDSCAPE ----- */
+
+@media only screen and (max-width: 900px) {
+    
+}
+
+/* ----- TABLET ----- */
+
+@media only screen and (max-width: 640px) {
+    .skill-chart {
+        width: 220px;
+    }
+    .axis-container {
+        gap: 35px;
+    }
+}
+
+/* ----- PHONE ----- */
+
+@media only screen and (max-width: 480px) {
+    .skill-chart {
+        width: 180px;
+    }
+    .axis-container {
+        gap: 25px;
+    }
 }

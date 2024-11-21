@@ -1,13 +1,14 @@
-.p1 {
-    line-height: 24px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+.projects-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .projects-button {
     background-color: #1E293B;
-    height: 40px;
-    width: 120px;
+    height: 28px;
+    width: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,4 +21,48 @@
 .projects-button:hover {
     background-color: #28364d;
     cursor: pointer;
+}
+
+.project-snippet-container {
+    position: relative;
+    height: 200px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.project-snippet-gallery {
+    position: relative;
+}
+
+.project-snippet {
+    height: 140px;
+    width: 210px;
+    position: absolute;
+    background-color: #1E293B;
+    border: 1px solid #284066;
+    border-radius: 8px;
+}
+
+.snippet-1 {
+    z-index: 3;
+    background-color: #0E141E;
+    margin-top: 40px;
+}
+
+.snippet-2 {
+    margin: 20px;
+    /* margin-left: 40px; */
+    z-index: 2;
+}
+
+.snippet-3 {
+    margin-left: 40px;
+    z-index: 1;
+}
+
+.projects-content {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
 }
