@@ -1,0 +1,67 @@
+.header {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #284066;
+    position: fixed;
+    width: 100%;
+    background-color: #0E141E;
+    /* box-shadow: 0 3px 5px 2px #080c13; */
+}
+
+.header-container {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+.header-name {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.menu-item-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 4px solid transparent;
+}
+
+.menu-item:hover {
+    border-bottom: 4px solid #B4D1FF;
+    animation: underline 0.3s;
+}
+
+@keyframes underline {
+    from { border-bottom: 4px solid transparent; }
+    to { border-bottom: 4px solid #B4D1FF; }
+}
+
+/* ----- TABLET LANDSCAPE ----- */
+
+@media only screen and (max-width: 900px) {
+    
+}
+
+/* ----- TABLET ----- */
+
+@media only screen and (max-width: 640px) {
+
+}
+
+/* ----- PHONE ----- */
+
+@media only screen and (max-width: 480px) {
+    .header-container {
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,154 @@
+.contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.image-container {
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-item {
+    font-size: 10pt;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #B4D1FF;
+}
+
+.contact-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    padding: 0 4px 0 4px;
+    height: 36px;
+    width: 100%;
+    transition: background-color 0.1s;
+}
+
+.contact-item-container:hover {
+    background-color: #1E293B;
+}
+
+.contact-item-container:hover > .contact-item-action {
+    visibility: visible;
+}
+
+.contact-item-action {
+    visibility: hidden;
+    background-color: #0E141E;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: #B4D1FF;
+}
+
+.contact-item-action:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.contacts-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cv-button {
+    background-color: #1E293B;
+    height: 28px;
+    width: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 8px;
+    border: 1px solid #284066;
+    transition: background-color 0.1s;
+}
+
+.cv-button:hover {
+    background-color: #28364d;
+    cursor: pointer;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-sm {
+    font-size: 14pt !important;
+    width: 18px;
+}
+
+.text-sm {
+    font-size: 10pt;
+}
+
+.fa-sm {
+    font-size: 12pt !important;
+}
+
+.image {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+    box-shadow: 0 0 5px 3px #1E293B;
+}
+
+.location-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    color: #B4D1FF;
+}
+
+.location-text {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 8pt;
+}
+
+/* ----- TABLET LANDSCAPE ----- */
+
+@media only screen and (max-width: 900px) {
+    
+}
+
+/* ----- TABLET ----- */
+
+@media only screen and (max-width: 640px) {
+
+}
+
+/* ----- PHONE ----- */
+
+@media only screen and (max-width: 480px) {
+    .contact-item-action {
+        cursor: pointer;
+        /* color: white; */
+        visibility: visible;
+    }
+}
