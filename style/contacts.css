@@ -1,6 +1,7 @@
 .contacts {
     display: flex;
     flex-direction: row;
+    /* justify-content: space-between; */
     gap: 20px;
 }
 
@@ -16,6 +17,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .contact-item {
@@ -68,6 +71,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 30px;
 }
 
 .cv-button {
@@ -150,5 +154,20 @@
         cursor: pointer;
         /* color: white; */
         visibility: visible;
+    }
+}
+
+/* ----- SMALL PHONE ----- */
+
+@media only screen and (max-width: 390px) {
+    .image {
+        width: 80px;
+        height: 80px;
+    }
+    .contact-item > span {
+        /* overflow: hidden;
+        white-space: nowrap;
+        width: 100px;
+        text-overflow: ellipsis; */
     }
 }

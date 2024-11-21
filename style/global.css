@@ -129,9 +129,21 @@ h1 {
 /* ----- PHONE ----- */
 
 @media only screen and (max-width: 480px) {
-    
+    .content-container {
+        margin: 90px 10px 10px 10px;
+        gap: 10px;
+    }
     .left-container, .right-container {
         min-width: 300px;
         width: 100%;
+        gap: 10px;
+    }
+}
+
+/* ----- SMALL PHONE ----- */
+
+@media only screen and (max-width: 390px) {
+    .section-container {
+        padding: 20px 24px;
     }
 }
