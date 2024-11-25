@@ -10,7 +10,7 @@
     flex-direction: row;
     height: 28px;
     border-radius: 8px;
-    border: 1px solid #284066;
+    border: 1px solid var(--border-color);
 }
 
 .skill-group {
@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     height: 100%;
-    background-color: #1E293B;
+    background-color: var(--blue-gray-3);
     transition: background-color 0.1s;
 }
 
@@ -31,16 +31,16 @@
 }
 
 .skill-group:hover {
-    background-color: #28364d;
+    background-color: var(--blue-gray-2);
     cursor: pointer;
 }
 
 .skill-group-selected {
-    background-color: #0E141E;
+    background-color: var(--background-color);
 }
 
 .skill-group-selected:hover {
-    background-color: #0E141E !important;
+    background-color: var(--background-color) !important;
     cursor: default !important;
 }
 
@@ -87,12 +87,12 @@
 
 .skill-bar {
     height: 20px;
-    background-color: #4a6ea7;
+    background-color: var(--blue-bright-3);
     transition: width 0.5s, background-color 0.1s;
 }
 
 .skill-bar:hover {
-    background-color: #eaa757;
+    background-color: var(--secondary-color);
 }
 
 .bar-4 {
@@ -122,7 +122,7 @@
     gap: 46px;
     height: 100%;
     top: 0;
-    border-bottom: 1px solid #284066;
+    border-bottom: 1px solid var(--border-color);
     transition: gap 0.1s;
 }
 
@@ -136,7 +136,7 @@
 
 .axis-col:hover > .axis-line,
 .axis-col:hover > .axis-label {
-    background-color: #4a6ea7;
+    background-color: var(--blue-bright-3);
 }
 
 .axis-col:hover {
@@ -150,14 +150,14 @@
 .axis-line {
     height: 100%;
     width: 1px;
-    background-color: #284066;
+    background-color: var(--blue-gray-2);
 }
 
 .axis-label {
     border-radius: 100%;
     height: 9px;
     width: 9px;
-    background-color: #284066;
+    background-color: var(--blue-gray-2);
 }
 
 .more-skills-container {

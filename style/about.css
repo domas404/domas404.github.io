@@ -23,5 +23,5 @@
 }
 
 .quality-icon {
-    color: #B4D1FF;
+    color: var(--text-light);
 }

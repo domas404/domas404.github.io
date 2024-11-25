@@ -1,8 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* :root {
-    color-scheme: light dark;
-} */
+:root {
+    --background-color: #0E141E;
+    --border-color: #284066;
+    --secondary-color: #eaa757;
+
+    /* BUTTONS, ETC. */
+    --blue-gray-1: ;
+    --blue-gray-2: #28364d;
+    --blue-gray-3: #1E293B;
+
+    --blue-bright-1: ;
+    --blue-bright-2: ;
+    --blue-bright-3: #4a6ea7;
+    
+    /* TEXT */
+    --text-light: #B4D1FF;
+    --text-medium: ;
+}
 
 html, body {
     width: 100%;
@@ -10,22 +25,14 @@ html, body {
     box-sizing: border-box;
     margin: 0;
     font-family: 'Roboto';
-    background-color: #0E141E;
+    background-color: var(--background-color);
     color: white;
 }
-
-/* .body-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
 
 .main-container {
     display: flex;
     justify-content: center;
-    /* height: 100%; */
     flex-shrink: 0;
-    /* margin: 40px; */
 }
 
 .content-container {
@@ -61,11 +68,10 @@ h1 {
 .section-container {
     display: flex;
     flex-direction: column;
-    border: 1px solid #284066;
+    border: 1px solid var(--border-color);
     border-radius: 16px;
     padding: 24px 30px;
-    /* margin: 10px; */
-    background-color: #0E141E;
+    /* background-color: #0E141E; */
     gap: 10px;
 }
 
@@ -88,20 +94,36 @@ h1 {
 }
 
 .footer {
-    border-top: 1px solid #284066;
-    /* position: absolute;
-    bottom: 0; */
+    border-top: 1px solid var(--border-color);
     width: 100%;
-    background-color: #0E141E;
+    /* background-color: #0E141E; */
 }
 
 .footer-text {
     height: 80px;
     font-size: 12px;
-    color: #5172a7;
+    color: var(--text-light);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.button {
+    background-color: var(--blue-gray-3);
+    height: 28px;
+    width: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: background-color 0.1s;
+}
+
+.button:hover {
+    background-color: var(--blue-gray-2);
+    cursor: pointer;
 }
 
 /* ----- TABLET LANDSCAPE ----- */
@@ -109,7 +131,6 @@ h1 {
 @media only screen and (max-width: 900px) {
     .content-container {
         flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
     }
     .left-container, .right-container {

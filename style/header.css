@@ -1,10 +1,10 @@
 .header {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid #284066;
+    border-bottom: 1px solid var(--border-color);
     position: fixed;
     width: 100%;
-    background-color: #0E141E;
+    /* background-color: #0E141E; */
     top: 0;
     z-index: 10;
     /* box-shadow: 0 3px 5px 2px #080c13; */
@@ -40,13 +40,13 @@
 }
 
 .menu-item:hover {
-    border-bottom: 4px solid #B4D1FF;
+    border-bottom: 4px solid var(--text-light);
     animation: underline 0.3s;
 }
 
 @keyframes underline {
     from { border-bottom: 4px solid transparent; }
-    to { border-bottom: 4px solid #B4D1FF; }
+    to { border-bottom: 4px solid var(--text-light); }
 }
 
 /* ----- TABLET LANDSCAPE ----- */
@@ -64,7 +64,5 @@
 /* ----- PHONE ----- */
 
 @media only screen and (max-width: 480px) {
-    .header-container {
-        /* padding: 0 20px; */
-    }
+    
 }
