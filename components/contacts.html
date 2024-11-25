@@ -8,7 +8,7 @@
     </head>
     <body>
         <div class="section-container">
-            <div class="contacts-header">
+            <div class="section-header">
                 <h1>Contacts</h1>
             </div>
             <div class="contacts">
@@ -33,10 +33,16 @@
                             </div>
                             <span id="phone-number">+370 612 34567</span>
                         </div>
-                        <div class="contact-item-action">
+                        <div
+                            id="number-copy-button"
+                            class="contact-item-action"
+                            onmouseover="displayTooltip(this)"
+                            onclick="copyPhoneNumber(this)"
+                        >
                             <span class="material-symbols-outlined icon-sm">
                                 content_copy
                             </span>
+                            <span id="phone-tooltip" class="tooltip-text">Copy</span>
                         </div>
                     </div>
                     <div class="contact-item-container">
@@ -48,10 +54,16 @@
                             </div>
                             <span>jon.doe@gmail.com</span>
                         </div>
-                        <div class="contact-item-action">
+                        <div
+                            id="email-copy-button"
+                            class="contact-item-action"
+                            onmouseenter="displayTooltip(this)"
+                            onclick="copyEmail(this)"
+                        >
                             <span class="material-symbols-outlined icon-sm">
                                 content_copy
                             </span>
+                            <span id="email-tooltip" class="tooltip-text">Copy</span>
                         </div>
                     </div>
                     <div class="contact-item-container">
@@ -61,11 +73,12 @@
                             </div>
                             <span>John Doe</span>
                         </div>
-                        <div class="contact-item-action">
+                        <a href="https://www.linkedin.com/in/dominykas-guiga-004b6724a" target="_blank" class="contact-item-action">
                             <span class="material-symbols-outlined icon-sm">
                                 open_in_new
                             </span>
-                        </div>
+                            <span class="tooltip-text">Visit</span>
+                        </a>
                     </div>
                 </div>
             </div>

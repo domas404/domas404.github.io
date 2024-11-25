@@ -1,8 +1,7 @@
 .contacts {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
-    gap: 20px;
+    gap: 30px;
 }
 
 .image-container {
@@ -11,88 +10,6 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-}
-
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.contact-item {
-    font-size: 10pt;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #B4D1FF;
-}
-
-.contact-item-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 4px;
-    padding: 0 4px 0 4px;
-    height: 36px;
-    width: 100%;
-    transition: background-color 0.1s;
-}
-
-.contact-item-container:hover {
-    background-color: var(--blue-gray-3);
-}
-
-.contact-item-container:hover > .contact-item-action {
-    visibility: visible;
-}
-
-.contact-item-action {
-    visibility: hidden;
-    background-color: var(--background-color);
-    width: 28px;
-    height: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    color: #B4D1FF;
-}
-
-.contact-item-action:hover {
-    cursor: pointer;
-    color: white;
-}
-
-.contacts-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 30px;
-}
-
-.icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 24px;
-}
-
-.icon-sm {
-    font-size: 14pt !important;
-    width: 18px;
-}
-
-.text-sm {
-    font-size: 10pt;
-}
-
-.fa-sm {
-    font-size: 12pt !important;
 }
 
 .image {
@@ -114,28 +31,115 @@
 .location-text {
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 8pt;
+    font-size: 0.8rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 100%;
+}
+
+.contact-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    padding: 0 4px 0 4px;
+    height: 40px;
+    width: 100%;
+    transition: background-color 0.1s;
+    position: relative;
+}
+
+.contact-item-container:hover {
+    background-color: var(--blue-gray);
+}
+
+.contact-item {
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #B4D1FF;
+}
+
+.contact-item-action {
+    visibility: hidden;
+    background-color: var(--background-color);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: #B4D1FF;
+}
+
+.contact-item-action:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.contact-item-container:hover > .contact-item-action {
+    visibility: visible;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+}
+
+.fa-sm {
+    font-size: 12pt !important;
+}
+
+.tooltip-text {
+    position: absolute;
+    font-size: 0.9rem;
+    background-color: var(--blue-gray);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 5px 10px;
+    top: 40px;
+    visibility: hidden;
+    text-align: center;
+    z-index: 5;
+}
+
+.contact-item-action:hover > .tooltip-text {
+    visibility: visible;
 }
 
 /* ----- TABLET LANDSCAPE ----- */
 
 @media only screen and (max-width: 900px) {
-    
+    .contact-item-action {
+        cursor: pointer;
+        visibility: visible;
+        background-color: var(--blue-gray);
+    }
+    .contact-item-container:hover {
+        background-color: var(--background-color);
+    }
 }
 
 /* ----- TABLET ----- */
 
 @media only screen and (max-width: 640px) {
-
+    
 }
 
 /* ----- PHONE ----- */
 
 @media only screen and (max-width: 480px) {
-    .contact-item-action {
-        cursor: pointer;
-        visibility: visible;
-    }
+    
 }
 
 /* ----- SMALL PHONE ----- */

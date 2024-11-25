@@ -53,12 +53,12 @@ class SkillPanel {
     updateTabStyle() {
         const generalTab = document.querySelector('#general-tab');
         const technicalTab = document.querySelector('#technical-tab');
-        if (technicalTab.classList.contains('skill-group-selected')) {
-            technicalTab.classList.remove('skill-group-selected');
-            generalTab.classList.add('skill-group-selected');
+        if (technicalTab.classList.contains('tab-selected')) {
+            technicalTab.classList.remove('tab-selected');
+            generalTab.classList.add('tab-selected');
         } else {
-            generalTab.classList.remove('skill-group-selected');
-            technicalTab.classList.add('skill-group-selected');
+            generalTab.classList.remove('tab-selected');
+            technicalTab.classList.add('tab-selected');
         }
     }
 

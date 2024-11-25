@@ -1,27 +1,43 @@
-.about-header {
-    /* height: 30px; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .qualities-container {
     display: flex;
     flex-direction: row;
+    /* padding: 10px 0; */
 }
 
 .quality-item {
     display: flex;
     gap: 8px;
+    align-items: center;
 }
 
 .col {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 16px;
     width: 50%;
+    padding: 8px 0;
 }
 
 .quality-icon {
     color: var(--text-light);
+}
+
+/* ----- TABLET LANDSCAPE ----- */
+
+@media only screen and (max-width: 900px) {
+    
+}
+
+/* ----- TABLET ----- */
+
+@media only screen and (max-width: 640px) {
+
+}
+
+/* ----- PHONE ----- */
+
+@media only screen and (max-width: 480px) {
+    .qualities-container {
+        flex-direction: column;
+    }
 }

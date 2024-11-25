@@ -8,15 +8,15 @@
     </head>
     <body>
         <div class="section-container">
-            <div class="skills-header">
+            <div class="section-header">
                 <h1>Skills</h1>
-                <div class="skill-type-container">
-                    <div id="technical-tab" class="technical skill-group text-sm skill-group-selected" onclick="switchToTechnical()">Technical</div>
-                    <div id="general-tab" class="general skill-group text-sm" onclick="switchToGeneral()">General</div>
+                <div class="tab-container">
+                    <div id="technical-tab" class="tab left-tab text-sm tab-selected" onclick="switchToTechnical()">Technical</div>
+                    <div id="general-tab" class="tab right-tab text-sm" onclick="switchToGeneral()">General</div>
                 </div>
             </div>
-            <div class="skills-chart-container">
-                <div class="skill-labels-container">
+            <div class="skill-chart-container">
+                <div class="skill-label-container">
                     <div class="skill-label">HTML</div>
                     <div class="skill-label">CSS</div>
                     <div class="skill-label">JavaScript</div>
@@ -54,14 +54,14 @@
                     </div>
                 </div>
             </div>
-            <div class="more-skills-container">
-                <div class="arrow-container">
-                    <div id="arrow-back" class="arrow-button back text-sm no-actions" onclick="moveToPreviousPage()">
+            <div class="more-skill-container">
+                <div class="tab-container">
+                    <div id="arrow-back" class="tab left-tab text-sm no-actions" onclick="moveToPreviousPage()">
                         <span class="material-symbols-outlined icon-sm">
                             arrow_back
                         </span>
                     </div>
-                    <div id="arrow-forward" class="arrow-button forward text-sm" onclick="moveToNextPage()">
+                    <div id="arrow-forward" class="tab right-tab text-sm" onclick="moveToNextPage()">
                         <span class="material-symbols-outlined icon-sm">
                             arrow_forward
                         </span>

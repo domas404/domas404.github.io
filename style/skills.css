@@ -1,57 +1,11 @@
-.skills-header {
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.skill-type-container {
-    display: flex;
-    flex-direction: row;
-    height: 28px;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-}
-
-.skill-group {
-    padding: 0 10px;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    background-color: var(--blue-gray-3);
-    transition: background-color 0.1s;
-}
-
-.technical {
-    border-radius: 8px 0 0 8px;
-}
-
-.general {
-    border-radius: 0 8px 8px 0;
-}
-
-.skill-group:hover {
-    background-color: var(--blue-gray-2);
-    cursor: pointer;
-}
-
-.skill-group-selected {
-    background-color: var(--background-color);
-}
-
-.skill-group-selected:hover {
-    background-color: var(--background-color) !important;
-    cursor: default !important;
-}
-
-.skills-chart-container {
-    margin-top: 10px;
+.skill-chart-container {
+    /* margin-top: 10px; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.skill-labels-container {
+.skill-label-container {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -59,11 +13,11 @@
 }
 
 .skill-label {
-    font-size: 14px;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 300;
-    height: 20px;
+    height: 24px;
     display: flex;
     align-items: center;
 }
@@ -72,7 +26,7 @@
 
 .skill-chart {
     width: 264px;
-    height: 170px;
+    height: 190px;
     position: relative;
     transition: width 0.1s;
 }
@@ -86,8 +40,8 @@
 }
 
 .skill-bar {
-    height: 20px;
-    background-color: var(--blue-bright-3);
+    height: 24px;
+    background-color: var(--blue-bright);
     transition: width 0.5s, background-color 0.1s;
 }
 
@@ -134,9 +88,22 @@
     margin-left: 4px;
 }
 
+.axis-line {
+    height: 100%;
+    width: 1px;
+    background-color: var(--blue-gray-hover);
+}
+
+.axis-label {
+    border-radius: 100%;
+    height: 9px;
+    width: 9px;
+    background-color: var(--blue-gray-hover);
+}
+
 .axis-col:hover > .axis-line,
 .axis-col:hover > .axis-label {
-    background-color: var(--blue-bright-3);
+    background-color: var(--blue-bright);
 }
 
 .axis-col:hover {
@@ -147,72 +114,10 @@
     width: 8px;
 }
 
-.axis-line {
-    height: 100%;
-    width: 1px;
-    background-color: var(--blue-gray-2);
-}
-
-.axis-label {
-    border-radius: 100%;
-    height: 9px;
-    width: 9px;
-    background-color: var(--blue-gray-2);
-}
-
-.more-skills-container {
+.more-skill-container {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-}
-
-.arrow-container {
-    display: flex;
-    flex-direction: row;
-    height: 28px;
-    border-radius: 8px;
-    border: 1px solid #284066;
-}
-
-.arrow-button {
-    padding: 0 10px;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    background-color: #1E293B;
-    transition: background-color 0.1s;
-}
-
-.back {
-    border-radius: 8px 0 0 8px;
-    border-right: 1px solid #284066;
-}
-
-.forward {
-    border-radius: 0 8px 8px 0;
-}
-
-.no-actions {
-    color: #5172a7;
-    background-color: #0E141E;
-}
-
-.no-actions:hover {
-    cursor: default !important;
-    background-color: #0E141E !important;
-}
-
-.arrow-button:hover {
-    background-color: #28364d;
-    cursor: pointer;
-}
-
-.skill-group-selected {
-    background-color: #0E141E;
-}
-
-.skill-group-selected:hover {
-    background-color: #141c2a;
 }
 
 /* ----- TABLET LANDSCAPE ----- */
