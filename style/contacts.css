@@ -139,14 +139,17 @@
 /* ----- PHONE ----- */
 
 @media only screen and (max-width: 480px) {
-    
+    .contacts {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 /* ----- SMALL PHONE ----- */
 
 @media only screen and (max-width: 390px) {
-    .image {
+    /* .image {
         width: 80px;
         height: 80px;
-    }
+    } */
 }

@@ -40,4 +40,7 @@
     .qualities-container {
         flex-direction: column;
     }
+    .col {
+        width: 100%;
+    }
 }
