@@ -1,22 +1,22 @@
 const technicalSkillMap = [
-    { skill: 'html', score: 4 },
-    { skill: 'css', score: 4 },
-    { skill: 'javascript', score: 4 },
-    { skill: 'typescript', score: 3 },
-    { skill: 'react', score: 3 },
-    { skill: 'next', score: 3 },
-    { skill: 'php', score: 2 },
-    { skill: 'sql', score: 4 },
-    { skill: 'python', score: 3 },
-    { skill: 'figma', score: 3 },
+    { skill: 'HTML', score: 4 },
+    { skill: 'CSS', score: 4 },
+    { skill: 'JavaScript', score: 4 },
+    { skill: 'React', score: 3 },
+    { skill: 'TypeScript', score: 3 },
+    { skill: 'SQL', score: 4 },
+    { skill: 'Python', score: 3 },
+    { skill: 'Figma', score: 3 },
+    { skill: 'Next', score: 3 },
+    { skill: 'PHP', score: 2 },
 ];
 
 const generalSkillMap = [
-    { skill: 'problem', score: 2 },
-    { skill: 'research ', score: 3 },
-    { skill: 'detail', score: 1 },
-    { skill: '???', score: 4 },
-    { skill: '???', score: 2 },
+    { skill: 'Research', score: 4 },
+    { skill: 'Problem solving', score: 3 },
+    { skill: '???', score: 3 },
+    { skill: 'Clean code', score: 3 },
+    { skill: 'Agile', score: 2 },
 ];
 
 class SkillPanel {

@@ -10,21 +10,29 @@
         <!-- <link rel="stylesheet" href="../../style/projects/preview.css" /> -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="../../scripts/header.js"></script>
     </head>
     <body class="body-container">
         <div class="header">
             <div class="header-container">
                 <span class="header-name">John Doe</span>
-                <nav class="menu-item-container">
-                    <a class="menu-item" href="../../">Home</a>
-                    <a class="menu-item" href="../">Projects</a>
+                <nav class="menu-navigation">
+                    <div id="menu-container" class="menu-item-container menu-hidden">
+                        <a class="menu-item" href="../../">Home</a>
+                        <a class="menu-item" href="../">Projects</a>
+                    </div>
+                    <div id="menu-button" class="menu-icon" onclick="toggleMenu()">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </div>
                 </nav>
             </div>
         </div>
         <div class="main-container">
             <div class="content-container">
                 <div class="project-header">
-                    <a href="../" class="button">
+                    <a href="../" class="">
                         <span class="material-symbols-outlined icon-large">
                             arrow_back
                         </span>
@@ -61,6 +69,7 @@
                     </div>
                 </div>
                 <div class="body-section">
+                    <h1>Who is this project for?</h1>
                     <div class="p1">This paragraph details some part of the project. This part takes up several lines and is made up of at least two sentences.</div>
                     <div class="p1">This paragraph details some part of the project. This part takes up several lines and is made up of at least two sentences.</div>
                     <div class="secondary-image-container">
@@ -68,6 +77,7 @@
                         <div class="caption">Description of the contents of the image.</div>
                     </div>
                     <div class="p1">This paragraph details some part of the project. This part takes up several lines and is made up of at least two sentences.</div>
+                    <h1>What it does?</h1>
                     <div>
                         <div>Function #1</div>
                         <div>Function #2</div>
@@ -76,6 +86,7 @@
                     </div>
                 </div>
                 <div class="body-section">
+                    
                     <div class="p1">This paragraph details some part of the project. This part takes up several lines and is made up of at least two sentences.</div>
                     <div class="tertiary-image-container">
                         <div>
@@ -97,6 +108,7 @@
                     </div> -->
                 </div>
             </div>
+            <div class="side-nav"></div>
         </div>
         <div class="footer">
             <div class="footer-text">© 2024 John Doe</div>

@@ -1,9 +1,9 @@
-.stack-container {
+.tag-container {
     display: flex;
     flex-direction: row;
     gap: 6px;
     flex-wrap: wrap;
-    margin: 10px 0 20px 0;
+    /* margin: 10px 0; */
     /* width: 200px; */
 }
 
@@ -11,9 +11,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 40px;
+    /* overflow: hidden; */
 }
 
-.stack-item {
+.tag {
     padding: 0 16px;
     display: flex;
     align-items: center;
@@ -22,6 +24,7 @@
     background-color: #0E141E;
     border: 1px solid #284066;
     font-size: 14px;
+    color: var(--text-light);
 }
 
 .image-container {
@@ -56,14 +59,86 @@
 }
 
 .content-container {
-    /* flex-direction: column; */
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .section-container {
     padding: 20px;
-    gap: 10px;
+    gap: 0;
+    /* width: 278px; */
 }
 
 .header-text {
     font-size: 1rem !important;
+}
+
+.col-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.description {
+    height: 64px;
+    overflow: hidden;
+}
+
+/* ----- TABLET LANDSCAPE ----- */
+
+@media only screen and (max-width: 900px) {
+    .content-container {
+        /* justify-content: center; */
+    }
+    .col-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* width: auto; */
+    }
+    .section-container {
+        /* padding: 20px;
+        gap: 0; */
+        width: 250px;
+        justify-self: flex-start;
+    }
+}
+
+/* ----- TABLET ----- */
+
+@media only screen and (max-width: 640px) {
+    .content-container {
+        justify-content: center;
+    }
+    .col-container {
+        /* flex-direction: row;
+        flex-wrap: wrap; */
+        /* justify-content: center;
+        align-items: center; */
+        width: 70%;
+    }
+    .section-container {
+        /* padding: 20px;
+        gap: 0; */
+        width: 100%;
+    }
+}
+
+/* ----- PHONE ----- */
+
+@media only screen and (max-width: 480px) {
+    .qualities-container {
+        flex-direction: column;
+    }
+    .col {
+        width: 100%;
+    }
+    .col-container {
+        width: 100%;
+    }
+    .section-container {
+        /* padding: 20px;
+        gap: 0; */
+        width: 100%;
+    }
 }

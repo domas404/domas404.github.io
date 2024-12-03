@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="./scripts/contacts.js"></script>
+        <script src="./scripts/header.js"></script>
         <script>
             $(function() {
                 $('#include-about-container').load("./components/about.html");
@@ -23,10 +24,16 @@
         <div class="header">
             <div class="header-container">
                 <span class="header-name">John Doe</span>
-                <nav class="menu-item-container">
-                    <a class="menu-item" href="./">Home</a>
-                    <!-- <a class="menu-item" href="">About</a> -->
-                    <a class="menu-item" href="./projects/">Projects</a>
+                <nav class="menu-navigation">
+                    <div id="menu-container" class="menu-item-container menu-hidden">
+                        <a class="menu-item current-page" href="./">Home</a>
+                        <a class="menu-item" href="./projects/">Projects</a>
+                    </div>
+                    <div id="menu-button" class="menu-icon" onclick="toggleMenu()">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -44,6 +51,7 @@
                     <div id="include-projects-container"></div>
                 </div>
             </div>
+            <div class="side-nav"></div>
         </div>
         <div class="footer">
             <div class="footer-text">© 2024 John Doe</div>

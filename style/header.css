@@ -38,16 +38,39 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     border-bottom: 4px solid transparent;
+    transition: border-color 0.2s;
 }
 
 .menu-item:hover {
     border-bottom: 4px solid var(--text-light);
-    animation: underline 0.3s;
 }
 
-@keyframes underline {
-    from { border-bottom: 4px solid transparent; }
-    to { border-bottom: 4px solid var(--text-light); }
+.menu-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-icon {
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    padding: 10px;
+    display: none;
+}
+
+.current-page {
+    border-bottom: 4px solid var(--border-color);
+}
+
+.side-nav {
+    /* position: absolute;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    margin-right: -50%;
+    display: none; */
+    transition: width 0.2s;
 }
 
 /* ----- TABLET LANDSCAPE ----- */
@@ -65,5 +88,51 @@
 /* ----- PHONE ----- */
 
 @media only screen and (max-width: 480px) {
-    
+    .menu-visible {
+        visibility: visible;
+    }
+
+    .menu-hidden {
+        visibility: hidden;
+    }
+
+    .menu-item-container {
+        flex-direction: column;
+        gap: 30px;
+        position: absolute;
+        left: 50%;
+        top: 80px;
+        /* background-color: var(--blue-gray); */
+        padding: 30px;
+        border-radius: 12px;
+        /* border: 1px solid var(--border-color); */
+        height: 100%;
+        align-items: flex-start;
+        /* transition-delay: 0.2s; */
+        /* visibility: hidden; */
+    }
+    .menu-icon {
+        visibility: visible;
+        display: block;
+    }
+
+    .side-nav-hidden {
+        position: absolute;
+        height: 100%;
+        width: 0;
+        right: 0;
+        /* margin-right: -50%; */
+        /* display: none; */
+    }
+
+    .side-nav-visible {
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        right: 0;
+        /* margin-right: 0; */
+        /* display: block; */
+        background-color: var(--background-color);
+        border-left: 1px solid var(--border-color);
+    }
 }
