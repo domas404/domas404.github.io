@@ -1,23 +1,18 @@
-
 function toggleMenu() {
-    // console.log("aaaa");
     const menu = document.querySelector('#menu-container');
     const sideNav = document.querySelector('.side-nav');
-    const body = document.querySelector('.content-container');
+    const overlay = document.querySelector('.overlay');
 
-    if (menu.classList.contains('menu-hidden')) {
-        sideNav.classList.remove('side-nav-hidden');
-        sideNav.classList.add('side-nav-visible');
+    sideNav.classList.toggle('visible');
+    overlay.classList.toggle('visible');
+
+    if (overlay.classList.contains('visible')) {
+        overlay.addEventListener('click', toggleMenu);
         setTimeout(() => {
-            menu.classList.remove('menu-hidden');
-            menu.classList.add('menu-visible');
+            menu.classList.toggle('menu-hidden');
         }, 100);
-        body.addEventListener('click', () => toggleMenu());
     } else {
-        body.removeEventListener('click', () => toggleMenu());
-        menu.classList.remove('menu-visible');
-        menu.classList.add('menu-hidden');
-        sideNav.classList.remove('side-nav-visible');
-        sideNav.classList.add('side-nav-hidden');
+        overlay.removeEventListener('click', toggleMenu);
+        menu.classList.toggle('menu-hidden');
     }
 }
