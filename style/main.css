@@ -1,0 +1,125 @@
+.main-container.home {
+    height: 100%;
+}
+
+.shape-container {
+    height: 95%;
+    width: 100%;
+}
+
+.shape {
+    height: 100%;
+    width: 100%;
+    background-color: var(--blue-gray);
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-image: url('../assets/main-image-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.shape-cutout {
+    height: 40px;
+    width: 220px;
+    background-color: var(--background-color);
+    position: absolute;
+    border-radius: 12px 12px 0 0;
+    border-top: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid transparent;
+    bottom: -1px;
+}
+
+.shape-cutout::before, .shape-cutout::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 40px;
+    /* background-color: var(--background-color); */
+    bottom: -1px;
+}
+
+.shape-cutout::before {
+    left: -40.5px;
+    border-radius: 0 0 12px 0;
+    box-shadow: 20px 0 0 0 var(--background-color);
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.shape-cutout::after {
+    right: -40.5px;
+    border-radius: 0 0 0 12px;
+    box-shadow: -20px 0 0 0 var(--background-color);
+    border-left: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.overview-button {
+    z-index: 8;
+    bottom: -18px;
+    position: absolute;
+    width: 180px;
+    height: 48px;
+}
+
+.main-text {
+    font-size: 2.4rem;
+    width: 50%;
+    align-self: center;
+    font-weight: 400;
+    color: var(--text-light);
+    z-index: 5;
+}
+
+.highlighted-text {
+    font-weight: 700;
+    color: #5d9bff;
+}
+
+.shape-overlay {
+    position: absolute;
+    border-radius: 16px;
+    background-image: linear-gradient(180deg, rgba(14,20,30,1) 0%, rgba(71,107,167,0.1) 100%);
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+}
+
+/* ----- TABLET LANDSCAPE ----- */
+
+@media only screen and (max-width: 900px) {
+    
+}
+
+/* ----- TABLET ----- */
+
+@media only screen and (max-width: 640px) {
+    
+}
+
+/* ----- PHONE ----- */
+
+@media only screen and (max-width: 480px) {
+    .main-text {
+        font-size: 2.2rem;
+        width: 80%;
+    }
+    .shape-container {
+        height: 90%;
+    }
+}
+
+/* ----- SMALL PHONE ----- */
+
+@media only screen and (max-width: 390px) {
+    .main-text {
+        font-size: 2rem;
+        width: 80%;
+    }
+}

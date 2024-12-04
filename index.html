@@ -6,6 +6,7 @@
         <title>Home</title>
         <link rel="stylesheet" href="style/global.css" />
         <link rel="stylesheet" href="style/header.css" />
+        <link rel="stylesheet" href="style/main.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -27,6 +28,7 @@
                 <nav class="menu-navigation">
                     <div id="menu-container" class="menu-item-container menu-hidden">
                         <a class="menu-item current-page" href="./">Home</a>
+                        <a class="menu-item">About</a>
                         <a class="menu-item" href="./projects/">Projects</a>
                     </div>
                     <div id="menu-button" class="menu-icon" onclick="toggleMenu()">
@@ -40,7 +42,25 @@
         <!-- <div class="home-container">
             <img src="./assets/nne-snippet.png" class="home-image" />
         </div> -->
-        <div class="main-container">
+        <div id="home" class="main-container home">
+            <div class="content-container home">
+                <div class="shape-container">
+                    <div class="shape">
+                        <div class="shape-overlay"></div>
+                        <div class="main-text">The <span class="highlighted-text">one</span> candidate you've been looking for</div>
+                        <div class="shape-cutout"></div>
+                        <a href="#about" class="button overview-button">
+                            <span class="material-symbols-outlined">
+                                arrow_downward
+                            </span>
+                            Quick overview
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="side-nav" class="side-nav"></div>
+        </div>
+        <div id="about" class="main-container">
             <div class="content-container">
                 <div class="left-container">
                     <div id="include-about-container"></div>
@@ -51,7 +71,7 @@
                     <div id="include-projects-container"></div>
                 </div>
             </div>
-            <div class="side-nav"></div>
+            
         </div>
         <div class="footer">
             <div class="footer-text">© 2024 John Doe</div>

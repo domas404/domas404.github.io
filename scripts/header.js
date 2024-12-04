@@ -1,6 +1,6 @@
 function toggleMenu() {
     const menu = document.querySelector('#menu-container');
-    const sideNav = document.querySelector('.side-nav');
+    const sideNav = document.querySelector('#side-nav');
     const overlay = document.querySelector('.overlay');
 
     sideNav.classList.toggle('visible');
