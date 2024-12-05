@@ -12,6 +12,7 @@
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="./scripts/contacts.js"></script>
         <script src="./scripts/header.js"></script>
+        <script src="./scripts/navigation.js" defer></script>
         <script>
             $(function() {
                 $('#include-about-container').load("./components/about.html");
@@ -71,11 +72,15 @@
                     <div id="include-projects-container"></div>
                 </div>
             </div>
-            
         </div>
         <div class="footer">
             <div class="footer-text">© 2024 John Doe</div>
         </div>
+        <a href="#home" id="scroll-to-top" class="button scroll-to-top hidden">
+            <span class="material-symbols-outlined">
+                arrow_upward
+            </span>
+        </a>
         <div class="overlay"></div>
     </body>
 </html>

@@ -224,6 +224,21 @@ a {
     background-color: var(--background-color) !important;
 }
 
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    box-shadow: 0 0 5px 1px var(--blue-gray);
+    transition: opacity 0.2s;
+}
+
+.scroll-to-top.hidden {
+    /* visibility: hidden; */
+    pointer-events: none;
+    opacity: 0;
+
+}
+
 /* ----- TABLET LANDSCAPE ----- */
 
 @media only screen and (max-width: 900px) {
@@ -250,12 +265,12 @@ a {
 @media only screen and (max-width: 480px) {
     .content-container {
         margin: 90px 10px 10px 10px;
-        gap: 10px;
+        gap: 50px;
     }
     .left-container, .right-container {
         min-width: 300px;
         width: 100%;
-        gap: 10px;
+        gap: 50px;
     }
 }
 
