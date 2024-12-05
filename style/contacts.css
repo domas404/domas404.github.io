@@ -1,7 +1,7 @@
 .contacts {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 20px;
 }
 
 .image-container {
@@ -77,6 +77,10 @@
     justify-content: center;
     border-radius: 4px;
     color: #B4D1FF;
+    position: absolute;
+    right: 4px;
+    box-shadow: none;
+    transition: box-shadow 0.1s;
 }
 
 .contact-item-action:hover {
@@ -86,6 +90,7 @@
 
 .contact-item-container:hover > .contact-item-action {
     visibility: visible;
+    box-shadow: -6px 0 5px 0 var(--blue-gray);
 }
 
 .icon-container {
