@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Portfolio of an aspiring front-end developer passioante about creating seamless user experiences." />
         <title>Home</title>
         <link rel="stylesheet" href="style/global.css" />
         <link rel="stylesheet" href="style/header.css" />
         <link rel="stylesheet" href="style/main.css" />
         <link rel="stylesheet" href="style/projects.css" />
+        <link rel="stylesheet" href="style/about.css" />
+        <link rel="stylesheet" href="style/contacts.css" />
+        <link rel="stylesheet" href="style/skills.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="./scripts/contacts.js"></script>
         <script src="./scripts/header.js"></script>
+        <script type="text/javascript" src="./scripts/contacts.js"></script>
+        <script type="text/javascript" src="./scripts/skills.js" defer></script>
         <script src="./scripts/navigation.js" defer></script>
-        <script>
-            $(function() {
-                $('#include-about-container').load("./components/about.html");
-                $("#include-skills-container").load("./components/skills.html");
-                $('#include-contacts-container').load("./components/contacts.html");
-                $('#include-projects-container').load("./components/projects.html");
-            });
-        </script>
     </head>
     <body class="body-container">
         <div class="header">
@@ -41,15 +38,16 @@
                 </nav>
             </div>
         </div>
-        <!-- <div class="home-container">
-            <img src="./assets/nne-snippet.png" class="home-image" />
-        </div> -->
         <div id="home" class="main-container home">
             <div class="content-container home">
                 <div class="shape-container">
                     <div class="shape">
                         <div class="shape-overlay"></div>
-                        <div class="main-text">The <span class="highlighted-text">one</span> candidate you've been looking for</div>
+                        <div class="main-text-container">
+                            <div class="main-text">The <span class="highlighted-text">one</span> candidate you've been looking for</div>
+                            <div class="subtext">Aspiring front-end developer passionate about creating seamless user experiences.</div>
+                        </div>
+                        <a href="https://www.pexels.com/photo/28973818/" class="image-source" target="_blank">Source</a>
                         <div class="shape-cutout"></div>
                         <a href="#about" class="button overview-button">
                             <span class="material-symbols-outlined">
@@ -62,63 +60,294 @@
             </div>
             <div id="side-nav" class="side-nav"></div>
         </div>
-        <div id="about" class="main-container">
+        <div class="main-container about">
             <div class="content-container">
-                <div class="left-container">
-                    <div id="include-about-container"></div>
-                    <div id="include-skills-container"></div>
+                <div id="about" class="section-title">
+                    <div>About</div>
                 </div>
-                <div class="right-container">
-                    <div id="include-contacts-container"></div>
-                    <div id="include-projects-container"></div>
+                <div class="top-container">
+                    <div id="about-container" class="section-container">
+                        <div class="section-header">
+                            <h1>Hello</h1>
+                            <a href="../assets/resume.pdf" target="_blank" class="button">
+                                <span class="material-symbols-outlined icon-sm">
+                                    open_in_new
+                                </span>
+                                <span class="text-sm">CV</span>
+                            </a>
+                        </div>
+                        <div class="p1">My name is Johnathan Doe. This is a page about me and the things that I do.</div>
+                        <div class="p1">I enjoy creating and implementing user interfaces. I strive to constantly improve and deliver the best of my abilities.</div>
+                        <div class="p2">By hiring me, you get someone, who's:</div>
+                        <div class="qualities-container">
+                            <div class="col">
+                                <div class="quality-item">
+                                    <span class="material-symbols-outlined quality-icon">
+                                        task_alt
+                                    </span>
+                                    <span>Growth-oriented</span>
+                                </div>
+                                <div class="quality-item">
+                                    <span class="material-symbols-outlined quality-icon">
+                                        task_alt
+                                    </span>
+                                    <span>Creative</span>
+                                </div>
+                                <div class="quality-item">
+                                    <span class="material-symbols-outlined quality-icon">
+                                        task_alt
+                                    </span>
+                                    <span>Adaptive</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="quality-item">
+                                    <span class="material-symbols-outlined quality-icon">
+                                        task_alt
+                                    </span>
+                                    <span>Quick-learning</span>
+                                </div>
+                                <div class="quality-item">
+                                    <span class="material-symbols-outlined quality-icon">
+                                        task_alt
+                                    </span>
+                                    <span>Detail-oriented</span>
+                                </div>
+                                <div class="quality-item">
+                                    <span class="material-symbols-outlined quality-icon">
+                                        task_alt
+                                    </span>
+                                    <span>Placeholder</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contacts-container" class="section-container">
+                        <div class="section-header">
+                            <h1>Contacts</h1>
+                        </div>
+                        <div class="contacts">
+                            <div class="image-container">
+                                <img src="./assets/profile-small.jpg" alt="candidates' profile" class="image" />
+                                <div class="location-container">
+                                    <div>
+                                        <span class="material-symbols-outlined icon-sm">
+                                            location_on
+                                        </span>
+                                    </div>
+                                    <div class="location-text">Vilnius</div>
+                                </div>
+                            </div>
+                            <div class="contact-info">
+                                <div class="contact-item-container">
+                                    <div class="contact-item">
+                                        <div class="icon-container">
+                                            <span class="material-symbols-outlined icon-sm">
+                                                call
+                                            </span>
+                                        </div>
+                                        <span id="phone-number">+370 612 34567</span>
+                                    </div>
+                                    <div
+                                        id="number-copy-button"
+                                        class="contact-item-action"
+                                        onmouseover="displayTooltip(this)"
+                                        onclick="copyPhoneNumber(this)"
+                                    >
+                                        <span class="material-symbols-outlined icon-sm">
+                                            content_copy
+                                        </span>
+                                        <span id="phone-tooltip" class="tooltip-text">Copy</span>
+                                    </div>
+                                </div>
+                                <div class="contact-item-container">
+                                    <div class="contact-item">
+                                        <div class="icon-container">
+                                            <span class="material-symbols-outlined icon-sm">
+                                                mail
+                                            </span>
+                                        </div>
+                                        <span>jonnn.doeee@gmail.com</span>
+                                    </div>
+                                    <div
+                                        id="email-copy-button"
+                                        class="contact-item-action"
+                                        onmouseenter="displayTooltip(this)"
+                                        onclick="copyEmail(this)"
+                                    >
+                                        <span class="material-symbols-outlined icon-sm">
+                                            content_copy
+                                        </span>
+                                        <span id="email-tooltip" class="tooltip-text">Copy</span>
+                                    </div>
+                                </div>
+                                <div class="contact-item-container">
+                                    <div class="contact-item">
+                                        <div class="icon-container">
+                                            <i class="fa fa-linkedin fa-sm"></i>
+                                        </div>
+                                        <span>John Doe</span>
+                                    </div>
+                                    <a href="https://www.linkedin.com/in/dominykas-guiga-004b6724a" target="_blank" class="contact-item-action">
+                                        <span class="material-symbols-outlined icon-sm">
+                                            open_in_new
+                                        </span>
+                                        <span class="tooltip-text">Visit</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="about" class="section-title">
+                    <div>Skills</div>
+                </div>
+                <div class="bottom-container">
+                    <div id="skills-container" class="section-container">
+                        <div class="section-header">
+                            <h1>Skills</h1>
+                            <div class="tab-container">
+                                <div id="technical-tab" class="tab left-tab text-sm tab-selected" onclick="switchToTechnical()">Technical</div>
+                                <div id="general-tab" class="tab right-tab text-sm" onclick="switchToGeneral()">General</div>
+                            </div>
+                        </div>
+                        <div class="skill-chart-container">
+                            <div class="skill-label-container">
+                                <div class="skill-label">HTML</div>
+                                <div class="skill-label">CSS</div>
+                                <div class="skill-label">JavaScript</div>
+                                <div class="skill-label">React</div>
+                                <div class="skill-label">TypeScript</div>
+                            </div>
+                            <div class="skill-chart">
+                                <div class="axis-container">
+                                    <div class="axis-base-h">
+                                        <div class="axis-line"></div>
+                                    </div>
+                                    <div class="axis-col">
+                                        <div class="axis-label">
+                                            <span id="label-25" class="label-text">Beginner</span>
+                                        </div>
+                                        <div class="axis-line"></div>
+                                    </div>
+                                    <div class="axis-col">
+                                        <div class="axis-label">
+                                            <span id="label-50" class="label-text">Basic competence</span>
+                                        </div>
+                                        <div class="axis-line"></div>
+                                    </div>
+                                    <div class="axis-col">
+                                        <div class="axis-label">
+                                            <span id="label-75" class="label-text flow-left">Comfortable</span>
+                                        </div>
+                                        <div class="axis-line"></div>
+                                    </div>
+                                    <div class="axis-col">
+                                        <div class="axis-label">
+                                            <span id="label-100" class="label-text flow-left">Highly proficient</span>
+                                        </div>
+                                        <div class="axis-line"></div>
+                                    </div>
+                                </div>
+                                <div class="bar-container">
+                                    <div class="skill-bar bar-4"></div>
+                                    <div class="skill-bar bar-4"></div>
+                                    <div class="skill-bar bar-4"></div>
+                                    <div class="skill-bar bar-3"></div>
+                                    <div class="skill-bar bar-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more-skill-container">
+                            <div class="tab-container">
+                                <div id="arrow-back" class="tab left-tab text-sm no-actions" onclick="moveToPreviousPage()">
+                                    <span class="material-symbols-outlined icon-sm">
+                                        arrow_back
+                                    </span>
+                                </div>
+                                <div id="arrow-forward" class="tab right-tab text-sm" onclick="moveToNextPage()">
+                                    <span class="material-symbols-outlined icon-sm">
+                                        arrow_forward
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="projects-container" class="section-container projects">
+                        <div class="section-header">
+                            <h1>Projects</h1>
+                        </div>
+                        <div class="projects-content">
+                            <div class="p1">While you’re here, take a look at some of my personal projects.</div>
+                            <div class="project-snippet-container">
+                                <div class="project-snippet-gallery">
+                                    <div class="project-snippet snippet-1">
+                                        <img src="../assets/nne-1.png" class="nne-snippet" alt="personal projects collection preview" />
+                                    </div>
+                                    <div class="project-snippet snippet-2"></div>
+                                    <div class="project-snippet snippet-3"></div>
+                                </div>
+                            </div>
+                            <a href="#projects" class="button">
+                                <span class="material-symbols-outlined icon-sm">
+                                    arrow_downward
+                                </span>
+                                See projects
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="projects" class="main-container">
-            <div class="content-container">
-                <a href="./projects/neural-network-editor/" class="section-container project-link">
-                    <div class="image-container image-h">
-                        <img src="../assets/nne-1.png" class="project-image" />
-                    </div>
-                    <div class="project-info">
-                        <div class="header-text">Neural network editor</div>
-                        <div class="description">An educational tool to create simple neural networks.</div>
-                        <div class="tag-container">
-                            <div class="tag">Next.js</div>
-                            <div class="tag">Tailwind CSS</div>
-                            <div class="tag">TensorFlow.js</div>
-                            <div class="tag">TypeScript</div>
+        <div class="main-container last">
+            <div class="content-container projects">
+                <div id="projects" class="section-title">
+                    <div>Projects</div>
+                </div>
+                <div class="preview-container">
+                    <a href="./projects/neural-network-editor/" class="section-container project-link">
+                        <div class="image-container image-h">
+                            <img src="../assets/nne-1.png" class="project-image" alt="neural network editor home page" />
                         </div>
-                    </div>
-                </a>
-                <a href="./projects/neural-network-editor/" class="section-container project-link">
-                    <div class="image-container image-h">
-                        <img src="../assets/nne-1.png" class="project-image" />
-                    </div>
-                    <div class="project-info">
-                        <div class="header-text">Progress tracker</div>
-                        <div class="description">A task managing tool that displays finished tasks on a progress bar.</div>
-                        <div class="tag-container">
-                            <div class="tag">Expo</div>
-                            <div class="tag">React Native</div>
-                            <!-- <div class="tag">Tailwind CSS</div> -->
+                        <div class="project-info">
+                            <div class="header-text">Neural network editor</div>
+                            <div class="description">An educational tool to create simple neural networks.</div>
+                            <div class="tag-container">
+                                <div class="tag">Next.js</div>
+                                <div class="tag">Tailwind CSS</div>
+                                <div class="tag">TensorFlow.js</div>
+                                <div class="tag">TypeScript</div>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="./projects/neural-network-editor/" class="section-container project-link">
-                    <div class="image-container image-h">
-                        <img src="../assets/nne-1.png" class="project-image" />
-                    </div>
-                    <div class="project-info">
-                        <div class="header-text">Recycling app</div>
-                        <div class="description">A tool to quickly search for the correct way to dispose waste.</div>
-                        <div class="tag-container">
-                            <div class="tag">Expo</div>
-                            <div class="tag">React Native</div>
-                            <div class="tag">TypeScript</div>
+                    </a>
+                    <a href="./projects/neural-network-editor/" class="section-container project-link">
+                        <div class="image-container image-h">
+                            <img src="../assets/nne-1.png" class="project-image" alt="progress tracker main screen" />
                         </div>
-                    </div>
-                </a>
+                        <div class="project-info">
+                            <div class="header-text">Progress tracker</div>
+                            <div class="description">A task managing tool that displays finished tasks on a progress bar.</div>
+                            <div class="tag-container">
+                                <div class="tag">Expo</div>
+                                <div class="tag">React Native</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./projects/neural-network-editor/" class="section-container project-link">
+                        <div class="image-container image-h">
+                            <img src="../assets/nne-1.png" class="project-image" alt="recycling app main screen" />
+                        </div>
+                        <div class="project-info">
+                            <div class="header-text">Recycling app</div>
+                            <div class="description">A tool to quickly search for the correct way to dispose waste.</div>
+                            <div class="tag-container">
+                                <div class="tag">Expo</div>
+                                <div class="tag">React Native</div>
+                                <div class="tag">TypeScript</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="footer">

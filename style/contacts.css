@@ -1,6 +1,6 @@
 .contacts {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -13,11 +13,16 @@
 }
 
 .image {
-    height: 100px;
-    width: 100px;
+    height: 160px;
+    width: 160px;
     object-fit: cover;
     border-radius: 100%;
     box-shadow: 0 0 5px 3px #1E293B;
+    transition: transform 10s linear;
+}
+
+.image:hover {
+    transform: rotate(360deg);
 }
 
 .location-container {
@@ -132,6 +137,11 @@
     }
     .contact-item-container:hover {
         background-color: var(--background-color);
+    }
+
+    .contact-item-container:hover > .contact-item-action {
+        visibility: visible;
+        box-shadow: none;
     }
 }
 

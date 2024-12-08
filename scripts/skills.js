@@ -26,6 +26,7 @@ class SkillPanel {
 
     constructor() { 
         this.skillLabels = document.querySelectorAll('.skill-label');
+        // console.log(this.skillLabels);
         this.skillBars = document.querySelectorAll('.skill-bar');
         this.maxPages = {
             technical: Math.ceil(technicalSkillMap.length / 5),

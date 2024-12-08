@@ -29,7 +29,7 @@
 .menu-item-container {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 24px;
 }
 
 .menu-item {
@@ -38,6 +38,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
     transition: border-color 0.2s;
 }
 
@@ -81,12 +82,6 @@
 /* ----- TABLET ----- */
 
 @media only screen and (max-width: 640px) {
-
-}
-
-/* ----- PHONE ----- */
-
-@media only screen and (max-width: 480px) {
     .menu-visible {
         visibility: visible;
     }
@@ -109,6 +104,8 @@
     .menu-icon {
         visibility: visible;
         display: block;
+        display: flex;
+        align-items: center;
     }
     .side-nav.visible {
         width: 50%;
@@ -132,4 +129,10 @@
         visibility: visible;
         background-color: rgba(0, 0, 0, 0.5);
     }
+}
+
+/* ----- PHONE ----- */
+
+@media only screen and (max-width: 480px) {
+    
 }

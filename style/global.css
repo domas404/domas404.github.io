@@ -52,10 +52,26 @@ html, body {
 
 .content-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 1000px;
     gap: 20px;
-    margin: 100px 20px 20px 20px;
+    margin: 20px;
+}
+
+.preview-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+}
+
+.top-container, .bottom-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* align-items: center; */
+    /* align-items: flex-end; */
 }
 
 .left-container, .right-container {
@@ -65,11 +81,12 @@ html, body {
 }
 
 .left-container {
-    width: 55%;
+    width: 65%;
+    justify-content: space-between;
 }
 
 .right-container {
-    width: 45%;
+    width: 35%;
 }
 
 .section-container {
@@ -79,6 +96,8 @@ html, body {
     border-radius: 16px;
     padding: 24px 30px;
     gap: 20px;
+    background: linear-gradient(180deg, rgba(14,20,30,0.3) 0%, rgba(30,41,59,0.2) 100%);
+    background-color: #36476220;
 }
 
 .section-header {
@@ -86,6 +105,23 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+#about-container {
+    width: 65%;
+}
+
+#contacts-container {
+    width: 35%;
+}
+
+#skills-container {
+    width: 55%;
+}
+
+#projects-container {
+    width: 45%;
+    /* height: 100%; */
 }
 
 .footer {
@@ -239,32 +275,86 @@ a {
 
 }
 
+.main-container.last {
+    margin-bottom: 5rem;
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    padding-top: 6rem;
+    color: var(--background-color);
+    text-shadow: 1px 1px var(--blue-bright),
+                -1px -1px var(--blue-bright),
+                -1px 1px var(--blue-bright),
+                1px -1px var(--blue-bright);
+}
+
 /* ----- TABLET LANDSCAPE ----- */
 
 @media only screen and (max-width: 900px) {
     .content-container {
         flex-direction: column;
         align-items: center;
+        
     }
-    .left-container, .right-container {
+    /* .left-container, .right-container {
         width: 500px;
+    } */
+    .top-container, .bottom-container {
+        flex-direction: column;
+        width: 500px;
+    }
+    #about-container, #contacts-container,
+    #skills-container, #projects-container {
+        width: 100%;
+        box-sizing: border-box;
+        /* width: 500px; */
+    }
+    .section-container {
+        /* flex: 1; */
+    }
+    .preview-container {
+        width: 500px;
+        flex-wrap: wrap;
     }
 }
 
 /* ----- TABLET ----- */
 
 @media only screen and (max-width: 640px) {
-    .left-container, .right-container {
+    /* .left-container, .right-container {
         min-width: 440px;
         width: 85%;
+    } */
+    .top-container, .bottom-container {
+        flex-direction: column;
+        width: 90%;
     }
+    #about-container, #contacts-container,
+    #skills-container, #projects-container {
+        /* min-width: 440px; */
+        /* width: 90%; */
+    }
+    .preview-container {
+        width: 90%;
+        justify-content: center;
+        /* width: 80%; */
+        /* flex-wrap: wrap; */
+    }
+    
 }
 
 /* ----- PHONE ----- */
 
 @media only screen and (max-width: 480px) {
     .content-container {
-        margin: 90px 10px 10px 10px;
+        margin: 10px 10px 10px 10px;
         gap: 50px;
     }
     .left-container, .right-container {
@@ -275,6 +365,22 @@ a {
     .scroll-to-top {
         bottom: 20px;
         right: 20px;
+    }
+    .top-container, .bottom-container {
+        /* flex-direction: column; */
+        width: 100%;
+    }
+    #about-container, #contacts-container,
+    #skills-container, #projects-container {
+        min-width: 300px;
+        /* width: 100%; */
+        /* gap: 50px; */
+    }
+    .preview-container {
+        width: 100%;
+        /* justify-content: center; */
+        /* width: 80%; */
+        /* flex-wrap: wrap; */
     }
 }
 

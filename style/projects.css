@@ -1,8 +1,13 @@
 /* PREVIEW TAB */
+
+/* .section-container.projects {
+    height: 100%;
+} */
+
 .project-snippet-container {
     position: relative;
-    height: 200px;
-    margin-top: 20px;
+    height: 110px;
+    /* margin-top: 20px; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -15,8 +20,8 @@
 }
 
 .project-snippet {
-    height: 140px;
-    width: 210px;
+    height: 100px;
+    width: 150px;
     position: absolute;
     background-color: #1E293B;
     border: 1px solid var(--border-color);
@@ -26,16 +31,16 @@
 .snippet-1 {
     z-index: 3;
     background-color: #0E141E;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 .snippet-2 {
-    margin: 20px;
+    margin-left: 40px;
     z-index: 2;
 }
 
 .snippet-3 {
-    margin-left: 40px;
+    margin-left: 80px;
     z-index: 1;
 }
 
@@ -44,6 +49,12 @@
     height: 100%;
     width: 100%;
     border-radius: 8px;
+}
+
+.projects-content {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
 }
 
 /* PROJECTS SECTION */
@@ -83,7 +94,7 @@
 .project-link {
     padding: 20px !important;
     gap: 20px;
-    /* width: 278px; */
+    /* width: 27.7%; */
 }
 
 .project-info {
@@ -97,8 +108,32 @@
     line-height: 1.3rem;
 }
 
-.preview-header {
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
+/* ----- TABLET LANDSCAPE ----- */
+
+@media only screen and (max-width: 900px) {
+    .project-link {
+        box-sizing: border-box;
+        width: 240px;
+    }
+}
+
+/* ----- TABLET ----- */
+
+@media only screen and (max-width: 640px) {
+    .project-link {
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
+
+/* ----- PHONE ----- */
+
+@media only screen and (max-width: 480px) {
+
+}
+
+/* ----- SMALL PHONE ----- */
+
+@media only screen and (max-width: 390px) {
+
 }

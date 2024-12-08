@@ -2,6 +2,10 @@
     height: 100%;
 }
 
+.content-container.home {
+    margin-top: 100px;
+}
+
 .shape-container {
     height: 95%;
     width: 100%;
@@ -16,10 +20,11 @@
     position: relative;
     display: flex;
     justify-content: center;
-    background-image: url('../assets/main-image-2.png');
+    background-image: url('../assets/main-image-4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .shape-cutout {
@@ -40,7 +45,6 @@
     position: absolute;
     height: 20px;
     width: 40px;
-    /* background-color: var(--background-color); */
     bottom: -1px;
 }
 
@@ -68,13 +72,25 @@
     height: 48px;
 }
 
+.main-text-container {
+    z-index: 5;
+    width: 60%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .main-text {
     font-size: 2.4rem;
-    width: 50%;
-    align-self: center;
-    font-weight: 400;
+    font-weight: 500;
     color: var(--text-light);
-    z-index: 5;
+}
+
+.subtext {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    opacity: 0.7;
 }
 
 .highlighted-text {
@@ -91,35 +107,49 @@
     opacity: 0.8;
 }
 
+.image-source {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
 /* ----- TABLET LANDSCAPE ----- */
 
 @media only screen and (max-width: 900px) {
-    
+    .main-text-container {
+        width: 70%;
+    }
+    .main-text {
+        font-size: 2.2rem;
+    }
 }
 
 /* ----- TABLET ----- */
 
 @media only screen and (max-width: 640px) {
-    
+    .main-text-container {
+        width: 80%;
+    }
+    .main-text {
+        font-size: 1.9rem;
+    }
 }
 
 /* ----- PHONE ----- */
 
 @media only screen and (max-width: 480px) {
-    .main-text {
-        font-size: 2.2rem;
-        width: 80%;
-    }
     .shape-container {
         height: 90%;
+    }
+    .content-container.home {
+        margin-top: 90px;
     }
 }
 
 /* ----- SMALL PHONE ----- */
 
 @media only screen and (max-width: 390px) {
-    .main-text {
-        font-size: 2rem;
-        width: 80%;
-    }
+    
 }
