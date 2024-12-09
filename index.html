@@ -26,9 +26,9 @@
                 <span class="header-name">Johnathan Doeee</span>
                 <nav class="menu-navigation">
                     <div id="menu-container" class="menu-item-container menu-hidden">
-                        <a class="menu-item current-page" href="#home">Home</a>
-                        <a class="menu-item" href="#about">About</a>
-                        <a class="menu-item" href="#projects">Projects</a>
+                        <a id="home-link" class="menu-item current-page" href="#home">Home</a>
+                        <a id="about-link" class="menu-item" href="#about">About</a>
+                        <a id="projects-link" class="menu-item" href="#projects">Projects</a>
                     </div>
                     <div id="menu-button" class="menu-icon" onclick="toggleMenu()">
                         <span class="material-symbols-outlined">
@@ -60,9 +60,9 @@
             </div>
             <div id="side-nav" class="side-nav"></div>
         </div>
-        <div class="main-container about">
+        <div id="about" class="main-container about">
             <div class="content-container">
-                <div id="about" class="section-title">
+                <div class="section-title">
                     <div>About</div>
                 </div>
                 <div class="top-container">
@@ -278,30 +278,32 @@
                             <h1>Projects</h1>
                         </div>
                         <div class="projects-content">
-                            <div class="p1">While you’re here, take a look at some of my personal projects.</div>
-                            <div class="project-snippet-container">
-                                <div class="project-snippet-gallery">
-                                    <div class="project-snippet snippet-1">
-                                        <img src="../assets/nne-1.png" class="nne-snippet" alt="personal projects collection preview" />
+                            <div class="projects-text">
+                                <div class="p1">While you’re here, take a look at some of my personal projects.</div>
+                                <div class="project-snippet-container">
+                                    <div class="project-snippet-gallery">
+                                        <div class="project-snippet snippet-1">
+                                            <img src="../assets/nne-1.png" class="nne-snippet" alt="personal projects collection preview" />
+                                        </div>
+                                        <div class="project-snippet snippet-2"></div>
+                                        <div class="project-snippet snippet-3"></div>
                                     </div>
-                                    <div class="project-snippet snippet-2"></div>
-                                    <div class="project-snippet snippet-3"></div>
                                 </div>
                             </div>
-                            <a href="#projects" class="button">
+                            <a href="#projects" class="button see-projects">
                                 <span class="material-symbols-outlined icon-sm">
                                     arrow_downward
                                 </span>
-                                See projects
+                                View projects
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="main-container last">
+        <div id="projects" class="main-container last">
             <div class="content-container projects">
-                <div id="projects" class="section-title">
+                <div class="section-title">
                     <div>Projects</div>
                 </div>
                 <div class="preview-container">

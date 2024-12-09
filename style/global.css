@@ -89,6 +89,18 @@ html, body {
     width: 35%;
 }
 
+@property --gradientPrimary {
+    syntax: '<color>';
+    initial-value: rgba(14,20,30,0.3);
+    inherits: false;
+}
+  
+@property --gradientSecondary {
+    syntax: '<color>';
+    initial-value: rgba(30,41,59,0.2);
+    inherits: false;
+}
+
 .section-container {
     display: flex;
     flex-direction: column;
@@ -96,8 +108,9 @@ html, body {
     border-radius: 16px;
     padding: 24px 30px;
     gap: 20px;
-    background: linear-gradient(180deg, rgba(14,20,30,0.3) 0%, rgba(30,41,59,0.2) 100%);
-    background-color: #36476220;
+    background: linear-gradient(180deg, var(--gradientPrimary) 0%, var(--gradientSecondary) 100%);
+    
+    /* background-color: #36476220; */
 }
 
 .section-header {
