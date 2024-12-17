@@ -76,7 +76,70 @@
 .project-image {
     object-fit: cover;
     width: 100%;
+    /* height: 200px; */
     border-radius: 8px;
+}
+
+.project-image-vertical {
+    object-fit: cover;
+    /* width: 100%; */
+    border-radius: 8px;
+    max-height: 170px;
+    height: 100%;
+    /* aspect-ratio: 3/2; */
+    /* height: 250px; */
+    object-fit: cover;
+    /* width: auto; */
+    /* border-radius: 12px; */
+}
+
+.project-image-vertical.small {
+    height: 80%;
+}
+
+.project-image-container-vertical {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px; */
+    /* gap: 10px; */
+    /* flex-shrink: 1; */
+    aspect-ratio: 3/2;
+    background: linear-gradient(180deg, rgba(14,20,30,0.3) 0%, rgba(97, 79, 164, 0.333) 100%);
+}
+
+.project-image-container-vertical.ra {
+    background: linear-gradient(180deg, rgba(14,20,30,0.3) 0%, rgba(64, 121, 88, 0.333) 100%);
+}
+
+.image-container {
+    /* border-radius: 100%; */
+    /* flex: 1; */
+    /* height: 100px; */
+    /* min-width: 200px; */
+}
+
+.vertical-image-container {
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    aspect-ratio: 3/2;
+    /* display: flex;
+    justify-content: center; */
+  }
+
+.vertical-image {
+    max-height: 100%;
+    /* height: 250px; */
+    object-fit: cover;
+    /* width: auto; */
+    /* border-radius: 12px; */
 }
 
 .tag-container {
@@ -109,11 +172,15 @@
     padding: 20px !important;
     gap: 20px;
     transition: --gradientPrimary 0.2s, --gradientSecondary 0.2s;
-    /* width: 27.7%; */
+    max-width: 320px;
+    /* width: 33.3%; */
+    flex: 1;
+    box-sizing: border-box;
+    /* height: 250px; */
 }
 
 .project-link:hover {
-    --gradientPrimary: rgba(14,20,30,0.8);
+    --gradientPrimary: rgba(30,41,59,0.2);
     --gradientSecondary: rgba(30,41,59,0.6);
 }
 
@@ -128,12 +195,30 @@
     line-height: 1.3rem;
 }
 
+.preview-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+}
+
 /* ----- TABLET LANDSCAPE ----- */
 
 @media only screen and (max-width: 900px) {
     .project-link {
         box-sizing: border-box;
-        width: 240px;
+        max-width: 240px;
+    }
+    .preview-container {
+        width: 500px;
+        flex-wrap: wrap;
+    }
+    .tag-container {
+        flex-wrap: nowrap;
+        overflow: scroll;   
+    }
+    .tag {
+        text-wrap: nowrap;
     }
 }
 
@@ -143,13 +228,29 @@
     .project-link {
         box-sizing: border-box;
         width: 100%;
+        flex: 1;
+        max-width: 100%;
+        min-width: 260px;
+    }
+    .preview-container {
+        width: 90%;
+        justify-content: flex-start;
+    }
+    .tag-container {
+        flex-wrap: wrap;
+        /* overflow: scroll;    */
+    }
+    .project-image-vertical {
+        max-height: 230px;
     }
 }
 
 /* ----- PHONE ----- */
 
 @media only screen and (max-width: 480px) {
-
+    .preview-container {
+        width: 100%;
+    }
 }
 
 /* ----- SMALL PHONE ----- */
