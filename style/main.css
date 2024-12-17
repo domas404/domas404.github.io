@@ -141,7 +141,7 @@
 
 @media only screen and (max-width: 480px) {
     .shape-container {
-        height: 90%;
+        height: 95%;
     }
     .content-container.home {
         margin-top: 90px;

@@ -7,7 +7,7 @@
     background-color: var(--background-color);
     top: 0;
     z-index: 10;
-    /* box-shadow: 0 3px 5px 2px #080c13; */
+    box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.5);
 }
 
 .header-container {
