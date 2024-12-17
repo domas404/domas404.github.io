@@ -1,7 +1,7 @@
 .project-header {
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 12px;
     align-items: center;
     padding: 10px;
     width: 100%;
@@ -55,6 +55,12 @@
     /* justify-content: center; */
 }
 
+.subsection.right {
+    flex: 1;
+    width: 59.6%;
+    position: relative;
+}
+
 .single-image-container {
     /* width: 100%; */
     display: flex;
@@ -68,6 +74,38 @@
     object-fit: cover;
     border-radius: 12px;
     border: 1px solid var(--border-color);
+}
+
+.vertical-image-container {
+    /* max-width: 500px; */
+    /* width: auto; */
+    aspect-ratio: 3 / 2;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    background: linear-gradient(180deg, rgba(14,20,30,0.3) 0%, rgba(97, 79, 164, 0.333) 100%);
+    /* height: 100%; */
+}
+
+.vertical-image-container.ra {
+    background: linear-gradient(180deg, rgba(14,20,30,0.3) 0%, rgba(64, 121, 88, 0.333) 100%);
+}
+
+.vertical-image {
+    max-width: 30%;
+    /* height: 100%; */
+
+    object-fit: contain;
+    border-radius: 12px;
+    width: auto;
+}
+
+.vertical-image.small {
+    height: 80%;
 }
 
 /* .intro-container {
@@ -144,6 +182,20 @@
     color: var(--text-light);
 }
 
+.go-back-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    transition: background-color 0.2s;
+}
+
+.go-back-button:hover {
+    background-color: var(--blue-gray);
+}
+
 /* ----- TABLET LANDSCAPE ----- */
 
 @media only screen and (max-width: 900px) {
@@ -157,6 +209,11 @@
         /* flex-shrink: 1; */
         /* flex-grow: 1; */
         flex-basis: auto;
+    }
+    .subsection.right {
+        flex: 1;
+        width: 100%;
+        position: relative;
     }
 }
 
@@ -176,5 +233,11 @@
     }
     .title {
         font-size: 1.4rem;
+    }
+    .vertical-image-container.single-image {
+        aspect-ratio: 1/1;
+    }
+    .vertical-image-container.single-image > .vertical-image {
+        max-width: 40%;
     }
 }

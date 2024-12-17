@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Progress Tracker</title>
+        <meta name="description" content="Overview of a progress tracking app project." />
+        <title>Progress Tracker | Johnathan Doeee</title>
         <link rel="stylesheet" href="../../style/global.css" />
         <link rel="stylesheet" href="../../style/header.css" />
-        <script src="../../scripts/header.js"></script>
+        <link rel="stylesheet" href="../../style/projects/project-layout.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="../../scripts/header.js"></script>
+        <script type="text/javascript" src="../../scripts/navigation.js" defer></script>
     </head>
     <body class="body-container">
         <div class="header">
             <div class="header-container">
-                <span class="header-name">John Doe</span>
+                <span class="header-name">Johnathan Doeee</span>
                 <nav class="menu-navigation">
                     <div id="menu-container" class="menu-item-container menu-hidden">
                         <a class="menu-item" href="../../">Home</a>
-                        <a class="menu-item" href="../">Projects</a>
+                        <a class="menu-item" href="../../#about">About</a>
+                        <a class="menu-item" href="../../#projects">Projects</a>
                     </div>
                     <div id="menu-button" class="menu-icon" onclick="toggleMenu()">
                         <span class="material-symbols-outlined">
@@ -25,7 +31,143 @@
                 </nav>
             </div>
         </div>
+        <div id="home" class="main-container">
+            <div class="content-container">
+                <div class="project-header">
+                    <a href="../../#projects" class="go-back-button">
+                        <span class="material-symbols-outlined">
+                            arrow_back
+                        </span>
+                    </a>
+                    <div class="title">Progress Tracker</div>
+                </div>
+                <div class="section">
+                    <div class="seciton-heading"></div>
+                    <div class="section-content">
+                        <div class="subsection left intro">
+                            <div class="tag-container">
+                                <div class="tag">Expo</div>
+                                <div class="tag">React Native</div>
+                            </div>
+                            <div class="p1 text">A task management tool that let's users track progress of their tasks (or goals). Each task progress is depicted by the percentage of completed subtasks.</div>
+                            <!-- <div class="p1 text">In order to separate tasks by the effort and time needed to complete them, they are given weights.</div> -->
+                            
+                            <!-- <div class="p1 text">This is a short introductory paragraph about this project and what it does. This is a short introductory paragraph about this project and what it does.</div> -->
+                            <div class="button-container">
+                                <!-- <a href="https://neural-network-editor-beta.vercel.app/" class="button" target="_blank">
+                                    <span class="material-symbols-outlined icon-sm">
+                                        open_in_new
+                                    </span>
+                                    <spna>Visit</spna>
+                                </a> -->
+                                <a href="https://github.com/domas404/progress_tracker" class="button" target="_blank">
+                                    <div class="icon-container">
+                                        <i class="fa fa-github fa-sm"></i>
+                                    </div>
+                                    <span>Source</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="subsection right">
+                            <!-- <div class="single-image-container"> -->
+                                <div class="vertical-image-container">
+                                    <img src="../../assets/pt-2.png" class="vertical-image small" alt="home page of neural network editing website" />
+                                    <img src="../../assets/pt-1.png" class="vertical-image" alt="home page of neural network editing website" />
+                                    <img src="../../assets/pt-3.png" class="vertical-image small" alt="home page of neural network editing website" />
+                                </div>
+                                <!-- <div class="caption">Neural network editor Home page.</div> -->
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-content">
+                        <div class="subsection left">
+                            <h1>What can it do?</h1>
+                            <!-- <div class="p1">This app is perfect for writing down school/university assignments as you can add a due date, labels and description noting important things to keep in mind.</div> -->
+                            <div class="p1">This app not only let's users create, edit and delete tasks, it also gives users the opportunity to:</div>
+                            <div class="list-container">
+                                <div class="list-item">
+                                    <span class="material-symbols-outlined icon-sm list-icon">
+                                        horizontal_rule
+                                    </span>
+                                    <span>Prioritize tasks by pinning them.</span>
+                                </div>
+                                <div class="list-item">
+                                    <span class="material-symbols-outlined icon-sm list-icon">
+                                        horizontal_rule
+                                    </span>
+                                    <span>Make tasks time bound by setting a due date.</span>
+                                </div>
+                                <div class="list-item">
+                                    <span class="material-symbols-outlined icon-sm list-icon">
+                                        horizontal_rule
+                                    </span>
+                                    <span>Sort tasks by creation date/due date/alphabet/progress to help manage between many tasks.</span>
+                                </div>
+                                <div class="list-item">
+                                    <span class="material-symbols-outlined icon-sm list-icon">
+                                        horizontal_rule
+                                    </span>
+                                    <span>Set weights to subtasks to represent larger subtasks better.</span>
+                                </div>
+                                <div class="list-item">
+                                    <span class="material-symbols-outlined icon-sm list-icon">
+                                        horizontal_rule
+                                    </span>
+                                    <span>Categorize tasks by giving them labels.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subsection right">
+                            <div class="vertical-image-container single-image">
+                                <video class="vertical-image" autoplay loop muted>
+                                    <source src="../../assets/pt-4.mp4" type="video/mp4" />
+                                </video>
+                                <!-- <img src="../../assets/nne-3-2.png" class="secondary-image" /> -->
+                                <!-- <div class="caption">Adding a new layer, changing its properties then removing another layer.</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <!-- <div class="section-heading">
+                    </div> -->
+                    <div class="section-content">
+                        <div class="subsection left">
+                            <h1>Subtasks</h1>
+                            <div class="p1">
+                                This app is well suited for school or university assignments, as it let's users note important things by adding description and group tasks by labels.</div>
+                            <!-- <div class="p1">The default weight always equals to 1, so ... .</div> -->
+                            <!-- <div>
+                                <div>Function #1</div>
+                                <div>Function #2</div>
+                                <div>Function #3</div>
+                                <div>Function #4</div>
+                            </div> -->
+                        </div>
+                        <div class="subsection right">
+                            <div class="vertical-image-container single-image">
+                                <video class="vertical-image" autoplay loop muted >
+                                    <source src="../../assets/pt-5.mp4" type="video/mp4" />
+                                </video>
+                                <!-- <img src="../../assets/nne-3.png" class="secondary-image" /> -->
+                                <!-- <div class="caption">Selecting dataset features for neural network training.</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="side-nav" class="side-nav"></div>
+        </div>
+        <div class="footer">
+            <div class="footer-text">© 2024 John Doe</div>
+        </div>
+        <a href="#home" id="scroll-to-top" class="button scroll-to-top hidden">
+            <span class="material-symbols-outlined">
+                arrow_upward
+            </span>
+        </a>
         <div class="overlay"></div>
-        <!-- <a href="../">go home</a> -->
     </body>
 </html>
