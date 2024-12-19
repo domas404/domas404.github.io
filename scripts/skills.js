@@ -2,20 +2,20 @@ const technicalSkillMap = [
     { skill: 'HTML', score: 4 },
     { skill: 'CSS', score: 4 },
     { skill: 'JavaScript', score: 4 },
-    { skill: 'React', score: 3 },
+    { skill: 'React.js', score: 3 },
     { skill: 'TypeScript', score: 3 },
     { skill: 'SQL', score: 4 },
     { skill: 'Python', score: 3 },
     { skill: 'Figma', score: 3 },
-    { skill: 'Next', score: 3 },
+    { skill: 'Next.js', score: 3 },
     { skill: 'PHP', score: 2 },
 ];
 
 const generalSkillMap = [
-    { skill: 'Research', score: 4 },
-    { skill: 'Problem solving', score: 3 },
-    { skill: '???', score: 3 },
+    { skill: 'Problem solving', score: 4 },
+    { skill: 'Responsive design', score: 3 },
     { skill: 'Clean code', score: 3 },
+    { skill: 'Version control', score: 3 },
     { skill: 'Agile', score: 2 },
 ];
 
