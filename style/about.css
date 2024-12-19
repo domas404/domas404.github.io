@@ -24,6 +24,7 @@
 
 .quality-icon {
     color: var(--text-light);
+    user-select: none;
 }
 
 /* ----- TABLET LANDSCAPE ----- */
