@@ -143,6 +143,9 @@
     .shape-container {
         height: 95%;
     }
+    .shape {
+        background-image: url('../assets/main-image-mobile.jpg');
+    }
     .content-container.home {
         margin-top: 90px;
     }
