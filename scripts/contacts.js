@@ -4,13 +4,13 @@ function displayTooltip(e) {
 }
 
 async function copyPhoneNumber(e) {
-    await navigator.clipboard.writeText('+37061234567');
+    await navigator.clipboard.writeText('+37062474609');
     const tooltip = e.children[1];
     tooltip.innerHTML = 'Copied';
 }
 
 async function copyEmail(e) {
-    await navigator.clipboard.writeText('john.doe@gmail.com');
+    await navigator.clipboard.writeText('domas.guiga@gmail.com');
     const tooltip = e.children[1];
     tooltip.innerHTML = 'Copied';
 }
