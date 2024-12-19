@@ -1,3 +1,8 @@
+.content-container {
+    gap: 0;
+    margin: 100px 20px 20px 20px;
+}
+
 .project-header {
     display: flex;
     flex-direction: row;
@@ -9,22 +14,6 @@
 
 .title {
     font-size: 2rem;
-    font-weight: 500;
-    display: flex;
-    gap: 10px;
-}
-
-.content-container {
-    display: flex;
-    flex-direction: column;
-    width: 1000px;
-    gap: 0;
-    margin: 100px 20px 20px 20px;
-    align-items: center;
-}
-
-.icon-large {
-    font-size: 1.8rem !important;
 }
 
 .section {
@@ -32,7 +21,7 @@
     flex-direction: column;
     gap: 20px;
     margin-bottom: 8rem;
-    /* max-width: 100%; */
+    margin-top: 20px;
 }
 
 .section-content {
@@ -45,14 +34,12 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* width: 50%; */
 }
 
 .subsection.left {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 24rem;
-    /* justify-content: center; */
 }
 
 .subsection.right {
@@ -61,15 +48,7 @@
     position: relative;
 }
 
-.single-image-container {
-    /* width: 100%; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-grow: 1;
-}
-
-.primary-image {
+.horizontal-image {
     width: 100%;
     object-fit: cover;
     border-radius: 12px;
@@ -77,8 +56,6 @@
 }
 
 .vertical-image-container {
-    /* max-width: 500px; */
-    /* width: auto; */
     aspect-ratio: 3 / 2;
     border: 1px solid var(--border-color);
     border-radius: 12px;
@@ -88,7 +65,6 @@
     gap: 20px;
     padding: 10px;
     background: linear-gradient(180deg, rgba(14,20,30,0.3) 0%, rgba(97, 79, 164, 0.333) 100%);
-    /* height: 100%; */
 }
 
 .vertical-image-container.ra {
@@ -97,8 +73,6 @@
 
 .vertical-image {
     max-width: 30%;
-    /* height: 100%; */
-
     object-fit: contain;
     border-radius: 12px;
     width: auto;
@@ -107,13 +81,6 @@
 .vertical-image.small {
     height: 80%;
 }
-
-/* .intro-container {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-} */
 
 .tag-container {
     display: flex;
@@ -132,6 +99,18 @@
     background-color: #0E141E;
     border: 1px solid #284066;
     font-size: 14px;
+}
+
+.progress-tag {
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    height: 24px;
+    color: var(--text-light);
+    border-radius: 8px;
+    /* background-color: #0E141E; */
+    border: 1px solid #284066;
+    font-size: 0.9rem;
 }
 
 .button-container {

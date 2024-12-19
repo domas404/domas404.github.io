@@ -8,21 +8,21 @@
         <link rel="stylesheet" href="../../style/global.css" />
         <link rel="stylesheet" href="../../style/header.css" />
         <link rel="stylesheet" href="../../style/projects/project-layout.css" />
-        <!-- <link rel="stylesheet" href="../../style/projects/preview.css" /> -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script type="text/javascript" src="../../scripts/header.js"></script>
         <script type="text/javascript" src="../../scripts/navigation.js" defer></script>
     </head>
     <body class="body-container">
-        <div class="header">
+        <header class="header">
             <div class="header-container">
                 <span class="header-name">Johnathan Doeee</span>
                 <nav class="menu-navigation">
-                    <div id="menu-container" class="menu-item-container menu-hidden">
-                        <a class="menu-item" href="../../">Home</a>
-                        <a class="menu-item" href="../">Projects</a>
-                    </div>
+                    <ul id="menu-container" class="menu-item-container menu-hidden">
+                        <li><a class="menu-item" href="../../">Home</a></li>
+                        <li><a class="menu-item" href="../../#about">About</a></li>
+                        <li><a class="menu-item" href="../../#projects">Projects</a></li>
+                    </ul>
                     <div id="menu-button" class="menu-icon" onclick="toggleMenu()">
                         <span class="material-symbols-outlined">
                             menu
@@ -30,32 +30,30 @@
                     </div>
                 </nav>
             </div>
-        </div>
-        <div id="home" class="main-container">
+        </header>
+        <main id="home" class="main-container">
             <div class="content-container">
-                <div class="project-header">
+                <header class="project-header">
                     <a href="../../#projects" class="go-back-button">
                         <span class="material-symbols-outlined">
                             arrow_back
                         </span>
                     </a>
-                    <div class="title">Neural network editor</div>
-                </div>
-                <div class="section">
-                    <div class="seciton-heading"></div>
+                    <h1 class="title">Neural network editor</h1>
+                </header>
+                <section class="section">
                     <div class="section-content">
                         <div class="subsection left intro">
-                            <div class="tag-container">
-                                <div class="tag">Next.js</div>
-                                <div class="tag">TypeScript</div>
-                                <div class="tag">Tailwind CSS</div>
-                                <div class="tag">TensorFlow.js</div>
-                                <div class="tag">PostgreSQL</div>
-                            </div>
-                            <div class="p1 text">Neural network editor is an educational tool that allows users to design simple model architectures and train them on selected datasets.</div>
-                            <div class="p1 text">This intended audience of this web application are people who do not have strong STEM background but are interested in learning how neural networks work.</div>
-                            <div class="p1 text">The perfect use case of this web app is to use it as a helper tool alongside watching introductory educational videos or lectures.</div>
-                            <!-- <div class="p1 text">This is a short introductory paragraph about this project and what it does. This is a short introductory paragraph about this project and what it does.</div> -->
+                            <ul class="tag-container">
+                                <li class="tag">Next.js</li>
+                                <li class="tag">Tailwind CSS</li>
+                                <li class="tag">TensorFlow.js</li>
+                                <li class="tag">TypeScript</li>
+                                <!-- <li class="tag">PostgreSQL</li> -->
+                            </ul>
+                            <p class="p1 text">Neural network editor is an educational tool that allows users to design simple model architectures and train them on selected datasets.</p>
+                            <!-- <p class="p1 text">This web application utilizes client's resources to fit created models.</p> -->
+                            <!-- <p class="p1 text">The perfect use case of this web app is to use it as a helper tool alongside watching introductory educational videos or lectures.</p> -->
                             <div class="button-container">
                                 <a href="https://neural-network-editor-beta.vercel.app/" class="button" target="_blank">
                                     <span class="material-symbols-outlined icon-sm">
@@ -72,123 +70,107 @@
                             </div>
                         </div>
                         <div class="subsection right">
-                            <div class="single-image-container">
-                                <img src="../../assets/nne-1.png" class="primary-image" alt="home page of neural network editing website" />
-                                <!-- <div class="caption">Neural network editor Home page.</div> -->
-                            </div>
+                            <figure>
+                                <img src="../../assets/nne-1.png" class="horizontal-image" alt="home page of neural network editing website" />
+                                <figcaption class="caption">Neural network editor Home page.</figcaption>
+                            </figure>
                         </div>
                     </div>
-                </div>
-                <div class="section">
-                    <!-- <div class="section-heading">
-                    </div> -->
+                </section>
+                <section class="section">
                     <div class="section-content">
                         <div class="subsection left">
-                            <h1>Creating a neural network</h1>
-                            <div class="p1">Users can build model architecture by dragging and dropping layers. Neuron count and activation function in each layer can be changed in the top right panel.</div>
+                            <h2>What can it do?</h2>
+                            <p class="p1">This application lets users interactively build and train shallow neural network architectures using graphical user interface.</p>
                             <!-- <div class="p1">Training hyperparameters can be tuned in the panel on the left.</div>                             -->
-                            <div class="p1">User can:</div>
-                            <div class="list-container">
-                                <div class="list-item">
+                            <p class="p1">Users can:</p>
+                            <ul class="list-container">
+                                <li class="list-item">
                                     <span class="material-symbols-outlined icon-sm list-icon">
                                         horizontal_rule
                                     </span>
-                                    <span>Select a dataset to use for training</span>
-                                </div>
-                                <div class="list-item">
-                                    <span class="material-symbols-outlined icon-sm list-icon">
-                                        horizontal_rule
-                                    </span>
-                                    <span>Create neural network architecture via drag&drop</span>
-                                </div>
-                                <div class="list-item">
+                                    <span>Create neural network architectures via drag & drop functionality</span>
+                                </li>
+                                <li class="list-item">
                                     <span class="material-symbols-outlined icon-sm list-icon">
                                         horizontal_rule
                                     </span>
                                     <span>Change properties of each neural network layer</span>
-                                </div>
-                                <div class="list-item">
+                                </li>
+                                <li class="list-item">
+                                    <span class="material-symbols-outlined icon-sm list-icon">
+                                        horizontal_rule
+                                    </span>
+                                    <span>Select a dataset to use for training</span>
+                                </li>
+                                <li class="list-item">
+                                    <span class="material-symbols-outlined icon-sm list-icon">
+                                        horizontal_rule
+                                    </span>
+                                    <span>Try various hyperparameter options to see which ones make the model perform best</span>
+                                </li>
+                                <li class="list-item">
                                     <span class="material-symbols-outlined icon-sm list-icon">
                                         horizontal_rule
                                     </span>
                                     <span>Navigate between several different models</span>
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
                         </div>
                         <div class="subsection right">
-                            <div class="single-image-container">
+                            <figure>
                                 <video class="secondary-image" autoplay loop muted>
                                     <source src="../../assets/nne-2.mp4" type="video/mp4" />
                                 </video>
-                                <!-- <img src="../../assets/nne-3-2.png" class="secondary-image" /> -->
-                                <div class="caption">Adding a new layer, changing its properties then removing another layer.</div>
-                            </div>
+                                <figcaption class="caption">Adding a new layer, changing its properties then removing another layer.</figcaption>
+                            </figure>
                         </div>
                     </div>
-                </div>
-                <div class="section">
-                    <!-- <div class="section-heading">
-                    </div> -->
+                </section>
+                <section class="section">
                     <div class="section-content">
                         <div class="subsection left">
-                            <h1>Choosing a dataset</h1>
-                            <div class="p1">This paragraph details some part of the project. This part takes up several lines and is made up of at least two sentences.</div>
-                            <div>
-                                <div>Function #1</div>
-                                <div>Function #2</div>
-                                <div>Function #3</div>
-                                <div>Function #4</div>
-                            </div>
+                            <h2>Choosing data</h2>
+                            <p class="p1">Users can select a dataset from the provided list of datasets and filter it by features or classes.</p>
                         </div>
                         <div class="subsection right">
-                            <div>
+                            <figure>
                                 <video class="secondary-image" autoplay loop muted >
                                     <source src="../../assets/nne-3.mp4" type="video/mp4" />
                                 </video>
-                                <!-- <img src="../../assets/nne-3.png" class="secondary-image" /> -->
-                                <div class="caption">Selecting dataset features for neural network training.</div>
-                            </div>
+                                <figcaption class="caption">Selecting dataset features for neural network training.</figcaption>
+                            </figure>
                         </div>
                     </div>
-                </div>
-                <div class="section">
+                </section>
+                <section class="section">
                     <div class="section-content">
                         <div class="subsection left">
-                            <h1>Training the model</h1>
-                            <div class="p1">This paragraph details some part of the project. This part takes up several lines and is made up of at least two sentences.</div>
-                            <div>
-                                <div>Function #1</div>
-                                <div>Function #2</div>
-                                <div>Function #3</div>
-                                <div>Function #4</div>
-                            </div>
+                            <h2>Training model</h2>
+                            <p class="p1">Training computations are performed on the client's side, utilizing user's device resources.</p>
+                            <p class="p1">When training is finished, users can view loss and accuracy plots, as well as classification matrix to evaluate model's performance.</p>
                         </div>
                         <div class="subsection right">
-                            <div>
+                            <figure>
                                 <video class="secondary-image" autoplay loop muted >
                                     <source src="../../assets/nne-4.mp4" type="video/mp4" />
                                 </video>
-                                <!-- <img src="../../assets/nne-4.png" class="secondary-image" /> -->
-                                <div class="caption">Viewing the performance of created and trained model.</div>
-                            </div>
+                                <figcaption class="caption">Viewing the performance of a trained model.</figcaption>
+                            </figure>
                         </div>
                     </div>
-                </div>
-                <!-- <div class="section">
-                    <div class="section-header"></div>
-                </div> -->
+                </section>
             </div>
             <div id="side-nav" class="side-nav"></div>
-        </div>
-        <div class="footer">
+        </main>
+        <footer class="footer">
             <div class="footer-text">© 2024 John Doe</div>
-        </div>
+        </footer>
         <a href="#home" id="scroll-to-top" class="button scroll-to-top hidden">
             <span class="material-symbols-outlined">
                 arrow_upward
             </span>
         </a>
         <div class="overlay"></div>
-        <!-- <a href="../">go home</a> -->
     </body>
 </html>
