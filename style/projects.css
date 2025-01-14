@@ -214,11 +214,13 @@
         flex-wrap: wrap;
     }
     .tag-container {
-        flex-wrap: nowrap;
-        overflow: scroll;   
+        /* flex-wrap: nowrap; */
+        /* overflow: scroll; */
     }
     .tag {
         text-wrap: nowrap;
+        height: 28px;
+        padding: 0 12px;
     }
 }
 
